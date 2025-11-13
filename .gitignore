@@ -1,4 +1,4 @@
 *.pyc
 __pycache__/
 .DS_Store
-asset/human_model
+asset/human_model/smplx
