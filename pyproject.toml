@@ -1,0 +1,43 @@
+[project]
+name = "phuma"
+version = "0.1.0"
+description = "PHUMA: Physically-Grounded Humanoid Locomotion Dataset"
+readme = "README.md"
+requires-python = ">=3.9,<3.11"
+license = { text = "MIT" }
+authors = [{ name = "DAVIAN Robotics, KAIST AI" }]
+
+dependencies = [
+    "torch>=2.6.0",
+    "numpy>=1.26.4,<2.0",
+    "scipy>=1.13.1",
+    "pyyaml>=6.0.2",
+    "easydict>=1.13",
+    "tqdm>=4.67.1",
+    "smplx>=0.1.28",
+    "mujoco>=3.3.0",
+    "pytorch-kinematics>=0.7.5",
+    "pyrender>=0.1.45",
+    "trimesh>=4.6.4",
+    "opencv-python>=4.11.0.86",
+    "pyopengl>=3.1.0",
+]
+
+[project.urls]
+Homepage = "https://davian-robotics.github.io/PHUMA/"
+Repository = "https://github.com/DAVIAN-Robotics/PHUMA"
+Documentation = "https://davian-robotics.github.io/PHUMA/"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = { find = { where = ["src"] } }
+package-dir = { "" = "src" }
+
+[tool.uv]
+# UV specific configurations
+
+[dependency-groups]
+dev = []
