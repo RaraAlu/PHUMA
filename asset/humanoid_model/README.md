@@ -1,5 +1,7 @@
 # Custom Robot Integration Guide
 
+English | [简体中文](README_CN.md)
+
 While we currently support Unitree humanoid robots (G1 and H1-2), custom robots can be integrated with some modifications.
 
 ## Required Files
