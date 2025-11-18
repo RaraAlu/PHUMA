@@ -80,7 +80,6 @@ check_file "UV_SETUP_GUIDE.md"
 check_file "UV_MIGRATION_SUMMARY.md"
 check_file "UV_QUICK_REF.md"
 check_file "README.md"
-check_file "requirements.txt"
 
 echo ""
 echo "🗂️  检查项目结构..."

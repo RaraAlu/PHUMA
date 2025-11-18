@@ -29,6 +29,17 @@ PHUMA leverages large-scale human motion data while overcoming physical artifact
    ```
 
 2. **Install uv (if not already installed):**
+   
+   **Recommended: Official installation script (standalone, does not depend on Python):**
+   ```bash
+   # Linux/macOS
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   
+   # Windows PowerShell
+   powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+   ```
+   
+   **Alternative: Install via pip:**
    ```bash
    pip install uv
    ```
@@ -60,10 +71,11 @@ PHUMA leverages large-scale human motion data while overcoming physical artifact
    conda activate phuma
    ```
 
-3. **Install dependencies:**
+3. **Install dependencies (pyproject-managed):**
    ```bash
-   pip install -r requirements.txt
    pip install -e .
+   # 或使用非可编辑模式:
+   # pip install .
    ```
 
 ## 📊 Dataset Pipeline
